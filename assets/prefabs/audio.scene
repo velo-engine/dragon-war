@@ -1,0 +1,19 @@
+# Music and sound effects, shared by the title screen and the game (`persistent`: the music keeps playing
+# when the scene changes). src/util.v plays them by name: play_sfx(scene, 'fire', pitch).
+node Audio {
+  persistent = true
+  node Music { AudioSource { clip = @asset("b1d9fb00")  looping = true  bus = "music"  volume = 0.3 } }
+  node fire { AudioSource { clip = @asset("64ade008")  play_on_start = false  bus = "sfx"  volume = 0.3 } }
+  node hit { AudioSource { clip = @asset("84433c9b")  play_on_start = false  bus = "sfx"  volume = 0.3 } }
+  node explode { AudioSource { clip = @asset("dde7292d")  play_on_start = false  bus = "sfx"  volume = 0.6 } }
+  node die { AudioSource { clip = @asset("454dc255")  play_on_start = false  bus = "sfx"  volume = 0.35 } }
+  node coin { AudioSource { clip = @asset("5c12b543")  play_on_start = false  bus = "sfx"  volume = 0.5 } }
+  node summon { AudioSource { clip = @asset("61c815e1")  play_on_start = false  bus = "sfx"  volume = 0.7 } }
+  node merge { AudioSource { clip = @asset("5e1a2399")  play_on_start = false  bus = "sfx"  volume = 0.7 } }
+  node leak { AudioSource { clip = @asset("4a20c5d5")  play_on_start = false  bus = "sfx"  volume = 0.7 } }
+  node wave { AudioSource { clip = @asset("bb4aeea5")  play_on_start = false  bus = "sfx"  volume = 0.6 } }
+  node win { AudioSource { clip = @asset("adb7be63")  play_on_start = false  bus = "sfx"  volume = 0.8 } }
+  node lose { AudioSource { clip = @asset("88f13ecc")  play_on_start = false  bus = "sfx"  volume = 0.8 } }
+  node click { AudioSource { clip = @asset("61c64f1f")  play_on_start = false  bus = "ui"  volume = 0.5 } }
+  node deny { AudioSource { clip = @asset("d8b15a3c")  play_on_start = false  bus = "ui"  volume = 0.5 } }
+}

@@ -1,0 +1,20 @@
+# Settings for `velo build` / `velo run` on Android and iOS. Paths are relative to this file.
+
+[app]
+name = "Dragon City"               # name shown under the app icon
+id = "com.example.dragoncity"         # bundle / package ID, must be unique per app
+version = "1.0.0"
+build = 1                         # increase for every store upload
+orientation = "portrait"         # landscape | portrait | any (iOS; Android follows the device)
+icon = "icon.png"                 # square PNG, 1024x1024
+
+[android]
+# keystore = "release.keystore"   # release signing (default: a debug key); passwords come from
+# keystore_alias = "release"      # the VAB_KS_PASS and VAB_KS_ALIAS_PASS environment variables
+# min_sdk = 21
+
+[ios]
+# min_version = "14.0"
+# identity = "Apple Development: Jane Doe (ABCDE12345)"   # default: the first development identity
+# provisioning_profile = "game.mobileprovision"           # default: an installed profile matching app.id
+# simulator = "iPhone 17"                                 # default: a booted simulator, else the first iPhone

@@ -1,0 +1,171 @@
+# The on-screen UI. Hud (src/hud.v) reads the Game and handles every button here. The node has `unscaled_time`
+# so the buttons keep working while the game is paused.
+node HUD {
+  unscaled_time = true
+  Canvas { }
+  Hud { }
+  node TopBg {
+    position = [270.0, 28]
+    UITransform { size = [540, 56] }
+    Widget { align_left = true  align_right = true  align_top = true  safe_area = false }
+    Panel { color = [20, 24, 44, 235] }
+  }
+  node Top {
+    UITransform { size = [540, 56] }
+    Widget { align_left = true  align_right = true  align_top = true }
+    node Lives {
+      UITransform { size = [70, 32] }
+      Widget { align_left = true  left = 8  align_center_y = true }
+      node Icon {
+        position = [-20, 0]
+        Sprite { texture = @asset("257f391b")  size = [26, 26]  }
+      }
+      node Text {
+        position = [17, 0]
+        UITransform { size = [36, 32] }
+        Label { text = "0"  size = 22  align = "left"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+    node Gold {
+      UITransform { size = [96, 32] }
+      Widget { align_left = true  left = 112  align_center_y = true }
+      node Icon {
+        position = [-33, 0]
+        Sprite { texture = @asset("2de19b67")  size = [26, 26]  }
+      }
+      node Text {
+        position = [17, 0]
+        UITransform { size = [62, 32] }
+        Label { text = "0"  size = 22  align = "left"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+    node Wave {
+      UITransform { size = [130, 32] }
+      Widget { align_left = true  left = 232  align_center_y = true }
+      node Icon {
+        position = [-50, 0]
+        Sprite { texture = @asset("6008e71d")  size = [26, 26]  }
+      }
+      node Text {
+        position = [17, 0]
+        UITransform { size = [96, 32] }
+        Label { text = "0"  size = 22  align = "left"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+
+    node Speed {
+      position = [0, 0]
+      UITransform { size = [54, 34] }
+      Widget { align_right = true  right = 68  align_center_y = true }
+      Panel { color = [70, 120, 210, 255]  radius = 10  border_width = 1 }
+      Button { }
+      node Text {
+        position = [0, 0]
+        UITransform { size = [46, 30] }
+        Label { text = "x1"  size = 18  align = "center"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+
+    node Pause {
+      UITransform { size = [54, 34] }
+      Widget { align_right = true  right = 8  align_center_y = true }
+      Panel { color = [70, 120, 210, 255]  radius = 10  border_width = 1 }
+      Button { }
+      node Icon {
+        Sprite { texture = @asset("1f39d319")  size = [22, 22] }
+      }
+    }
+  }
+  node Summon {
+    position = [270.0, 814]
+    UITransform { size = [330, 60] }
+    Panel { color = [230, 130, 40, 255]  radius = 16  border_width = 2  border_color = [255, 235, 180, 200] }
+    Button { }
+    node Egg {
+      position = [-132, 0]
+      Sprite { texture = @asset("7f3f2f53")  size = [42, 42]  }
+    }
+    node Text {
+      position = [-26, 0]
+      UITransform { size = [150, 40] }
+      Label { text = "SUMMON"  size = 26  align = "center"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2] outline_color = [90, 40, 10, 255]  outline_width = 2 }
+    }
+    node Coin {
+      position = [74, 0]
+      Sprite { texture = @asset("2de19b67")  size = [28, 28]  }
+    }
+    node Cost {
+      position = [120, 0]
+      UITransform { size = [70, 40] }
+      Label { text = "10"  size = 26  align = "left"  valign = "middle"  color = [255, 224, 90, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+    }
+  }
+  node Hint {
+    active = false
+    position = [270.0, 500]
+    UITransform { size = [500, 56] }
+    Label { text = ""  size = 21  align = "center"  valign = "middle"  wrap = true  outline_color = [20, 10, 30, 255]  outline_width = 2.5 }
+  }
+  node Banner {
+    active = false
+    position = [270.0, 250]
+    UITransform { size = [500, 90] }
+    Label { text = ""  size = 60  align = "center"  valign = "middle"  color = [255, 236, 150, 255]  outline_color = [110, 50, 10, 255]  outline_width = 4 }
+  }
+  node Overlay {
+    active = false
+    z_index = 20
+    position = [270.0, 480.0]
+    UITransform { size = [540, 960] }
+    Widget { align_left = true  align_right = true  align_top = true  align_bottom = true  safe_area = false }
+    Panel { color = [8, 8, 20, 170] }
+    node Box {
+      UITransform { size = [440, 330] }
+      Widget { align_center_x = true  align_center_y = true }
+      Panel { color = [28, 32, 54, 245]  radius = 16  border_width = 2  border_color = [255, 255, 255, 60] }
+    node Title {
+      position = [0, -128]
+      UITransform { size = [400, 56] }
+      Label { text = "Paused"  size = 44  align = "center"  valign = "middle"  color = [255, 224, 90, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2] outline_color = [60, 30, 10, 255]  outline_width = 2.5 }
+    }
+    node Sub {
+      position = [0, -72]
+      UITransform { size = [400, 52] }
+      Label { text = ""  size = 19  align = "center"  valign = "middle"  color = [220, 228, 245, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2] wrap = true }
+    }
+    node Resume {
+      position = [0, -4]
+      UITransform { size = [270, 48] }
+      Panel { color = [62, 168, 88, 255]  radius = 10  border_width = 1 }
+      Button { }
+      node Text {
+        position = [0, 0]
+        UITransform { size = [262, 44] }
+        Label { text = "Resume"  size = 22  align = "center"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+    node Restart {
+      position = [0, 56]
+      UITransform { size = [270, 48] }
+      Panel { color = [70, 120, 210, 255]  radius = 10  border_width = 1 }
+      Button { }
+      node Text {
+        position = [0, 0]
+        UITransform { size = [262, 44] }
+        Label { text = "Restart"  size = 22  align = "center"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+    node Menu {
+      position = [0, 116]
+      UITransform { size = [270, 48] }
+      Panel { color = [110, 100, 130, 255]  radius = 10  border_width = 1 }
+      Button { }
+      node Text {
+        position = [0, 0]
+        UITransform { size = [262, 44] }
+        Label { text = "Main menu"  size = 22  align = "center"  valign = "middle"  color = [255, 255, 255, 255]  shadow_color = [0, 0, 0, 150]  shadow_offset = [1, 2]  }
+      }
+    }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+# The game. Board/Slots are the battle slots (dragons there attack), Board/Bench is where new dragons wait.
+# Game (src/game.v) reads the cell positions from these nodes, so the layout can be changed in the editor.
+node Main {
+  node Audio from @asset("a96202a7") { }
+  node Background {
+    position = [270, 480]
+    UITransform { size = [540, 960] }
+    Widget { align_left = true  align_right = true  align_top = true  align_bottom = true  safe_area = false }
+    Panel { color = [36, 30, 62, 255]  block_input = false }
+  }
+  node Board {
+    node Field {
+      position = [270, 308]
+      Sprite { texture = @asset("40dda0fd") }
+    }
+    node Floor {
+      position = [270, 760]
+      Sprite { texture = @asset("2036b10e") }
+    }
+    node Enemies {
+      y_sort = true
+    }
+    node Wall {
+      position = [270, 548]
+      Sprite { texture = @asset("28713956") }
+    }
+    node Slots {
+      node S0_0 {
+        position = [54, 622]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S0_1 {
+        position = [162, 622]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S0_2 {
+        position = [270, 622]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S0_3 {
+        position = [378, 622]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S0_4 {
+        position = [486, 622]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S1_0 {
+        position = [54, 722]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S1_1 {
+        position = [162, 722]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S1_2 {
+        position = [270, 722]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S1_3 {
+        position = [378, 722]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node S1_4 {
+        position = [486, 722]
+        Sprite { texture = @asset("3c68d4f7") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+    }
+    node Bench {
+      node B0 {
+        position = [54, 900]
+        Sprite { texture = @asset("d431448a") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node B1 {
+        position = [162, 900]
+        Sprite { texture = @asset("d431448a") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node B2 {
+        position = [270, 900]
+        Sprite { texture = @asset("d431448a") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node B3 {
+        position = [378, 900]
+        Sprite { texture = @asset("d431448a") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+      node B4 {
+        position = [486, 900]
+        Sprite { texture = @asset("d431448a") }
+        node Hi {
+          active = false
+          z_index = 1
+          Sprite { texture = @asset("1aced5e5") }
+        }
+      }
+    }
+    node Dragons {
+      y_sort = true
+    }
+    node Bullets {
+      z_index = 2
+    }
+    node Fx {
+      z_index = 3
+    }
+  }
+  node Game {
+    Game { }
+  }
+  node HUD from @asset("2a590c2c") { }
+}

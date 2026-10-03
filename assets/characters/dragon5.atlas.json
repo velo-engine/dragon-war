@@ -1,0 +1,70 @@
+{
+ "image": "dragon5.png",
+ "width": 256,
+ "height": 256,
+ "regions": [
+  {
+   "path": "dragon5/aura.png",
+   "x": 0,
+   "y": 0,
+   "width": 134,
+   "height": 134
+  },
+  {
+   "path": "dragon5/tail.png",
+   "x": 0,
+   "y": 210,
+   "width": 49,
+   "height": 44
+  },
+  {
+   "path": "dragon5/wing_l.png",
+   "x": 70,
+   "y": 136,
+   "width": 66,
+   "height": 64
+  },
+  {
+   "path": "dragon5/wing_r.png",
+   "x": 138,
+   "y": 136,
+   "width": 66,
+   "height": 64
+  },
+  {
+   "path": "dragon5/foot_l.png",
+   "x": 86,
+   "y": 210,
+   "width": 22,
+   "height": 15
+  },
+  {
+   "path": "dragon5/foot_r.png",
+   "x": 110,
+   "y": 210,
+   "width": 22,
+   "height": 15
+  },
+  {
+   "path": "dragon5/body.png",
+   "x": 0,
+   "y": 136,
+   "width": 68,
+   "height": 72
+  },
+  {
+   "path": "dragon5/head.png",
+   "x": 136,
+   "y": 0,
+   "width": 73,
+   "height": 73
+  },
+  {
+   "path": "dragon5/flame.png",
+   "x": 51,
+   "y": 210,
+   "width": 33,
+   "height": 44
+  }
+ ]
+}

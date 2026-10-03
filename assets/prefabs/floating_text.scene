@@ -1,0 +1,5 @@
+node FloatingText {
+  FloatText { }
+  UITransform { size = [110, 28] }
+  Label { text = ""  size = 24  align = "center"  valign = "middle"  outline_color = [20, 10, 30, 255]  outline_width = 2.5 }
+}

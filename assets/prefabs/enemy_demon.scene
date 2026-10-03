@@ -1,0 +1,18 @@
+# demon: a Kine2D skeleton (characters/demon.*) that marches down the field. Enemy comes from src/enemy.v;
+# the Game keeps these nodes in a pool, so they are created once and reused.
+node EnemyDemon {
+  Enemy { kind = "demon" }
+  node Shadow {
+    position = [0, 27.68]
+    Sprite { texture = @asset("42591516")  size = [55.2, 13.6] }
+  }
+  node Body {
+    scale = [0.8, 0.8]
+    Kine2D { data = @asset("3596b9ed")  atlas = @asset("c6b6da54")  animation = "walk" }
+  }
+  node Bar {
+    position = [0, -70.04]
+    UITransform { size = [51.52, 6] }
+    ProgressBar { progress = 1  fill_color = [96, 220, 112, 255]  back_color = [24, 14, 30, 210]  radius = 3 }
+  }
+}

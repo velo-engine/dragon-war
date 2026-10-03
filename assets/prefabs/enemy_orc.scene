@@ -1,0 +1,18 @@
+# orc: a Kine2D skeleton (characters/orc.*) that marches down the field. Enemy comes from src/enemy.v;
+# the Game keeps these nodes in a pool, so they are created once and reused.
+node EnemyOrc {
+  Enemy { kind = "orc" }
+  node Shadow {
+    position = [0, 20.232]
+    Sprite { texture = @asset("42591516")  size = [43.2, 13.6] }
+  }
+  node Body {
+    scale = [0.8, 0.8]
+    Kine2D { data = @asset("d84f85dd")  atlas = @asset("2015b457")  animation = "walk" }
+  }
+  node Bar {
+    position = [0, -54.376]
+    UITransform { size = [40.32, 6] }
+    ProgressBar { progress = 1  fill_color = [96, 220, 112, 255]  back_color = [24, 14, 30, 210]  radius = 3 }
+  }
+}

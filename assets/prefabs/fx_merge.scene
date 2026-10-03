@@ -1,0 +1,6 @@
+node FxMerge {
+  ParticleSystem { texture = @asset("9eeb387f")  rate = 0  looping = false  duration = 0  additive = true  burst = 26  lifetime = 0.7  speed = 170  speed_var = 50  spread = 180  damping = 2.6  start_size = 18  end_size = 3  start_color = [255, 236, 140, 255]  end_color = [255, 150, 40, 0] }
+  node Ring {
+    ParticleSystem { texture = @asset("9eeb387f")  rate = 0  looping = false  duration = 0  additive = true  burst = 14  lifetime = 0.5  speed = 60  speed_var = 20  spread = 180  damping = 2  shape = "circle"  shape_size = [26, 0]  start_size = 22  end_size = 4  start_color = [255, 255, 255, 230]  end_color = [140, 220, 255, 0] }
+  }
+}

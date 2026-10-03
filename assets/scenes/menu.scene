@@ -1,0 +1,56 @@
+# Title screen: MenuScreen (src/menu.v) starts the game and shows the best result.
+node Menu {
+  node Audio from @asset("a96202a7") { }
+  node Sky {
+    position = [270, 480]
+    UITransform { size = [540, 960] }
+    Widget { align_left = true  align_right = true  align_top = true  align_bottom = true  safe_area = false }
+    Panel { color = [92, 70, 150, 255]  block_input = false }
+  }
+  node Background {
+    position = [270, 480]
+    Sprite { texture = @asset("c1039e4d")  size = [540, 960] }
+  }
+  node Dragon0 {
+    position = [112, 540]
+    scale = [1.5, 1.5]
+    Kine2D { data = @asset("9d1c930c")  atlas = @asset("745f09be")  animation = "idle"  speed = 0.9 }
+  }
+  node Dragon1 {
+    position = [270, 500]
+    scale = [2.3, 2.3]
+    Kine2D { data = @asset("0bf5d64f")  atlas = @asset("2561f239")  animation = "idle"  speed = 1 }
+  }
+  node Dragon2 {
+    position = [428, 540]
+    scale = [1.5, 1.5]
+    Kine2D { data = @asset("daaec1a5")  atlas = @asset("902a2875")  animation = "idle"  speed = 1.1 }
+  }
+  node UI {
+    Canvas { }
+    MenuScreen { }
+    node Title {
+      position = [270.0, 150]
+      UITransform { size = [520, 150] }
+      Label { text = "DRAGON\nCITY"  size = 72  align = "center"  valign = "middle"  color = [255, 236, 150, 255]  line_spacing = 1.0
+              outline_color = [110, 50, 10, 255]  outline_width = 4  shadow_color = [0, 0, 0, 120]  shadow_offset = [4, 6] }
+    }
+    node Tagline {
+      position = [270.0, 258]
+      UITransform { size = [520, 34] }
+      Label { text = "Merge dragons, defend the city"  size = 24  align = "center"  valign = "middle"  outline_color = [60, 30, 80, 255]  outline_width = 2 }
+    }
+    node Best {
+      position = [270.0, 298]
+      UITransform { size = [520, 32] }
+      Label { text = ""  size = 20  align = "center"  valign = "middle"  outline_color = [60, 30, 80, 255]  outline_width = 2 }
+    }
+    node Play {
+      position = [270.0, 740]
+      UITransform { size = [280, 74] }
+      Panel { color = [64, 176, 92, 255]  radius = 16  border_width = 2 }
+      Button { }
+      node Text { Label { text = "PLAY"  size = 38  align = "center"  valign = "middle"  outline_color = [20, 70, 30, 255]  outline_width = 2 } }
+    }
+  }
+}

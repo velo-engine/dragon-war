@@ -1,0 +1,63 @@
+{
+ "image": "dragon1.png",
+ "width": 256,
+ "height": 101,
+ "regions": [
+  {
+   "path": "dragon1/tail.png",
+   "x": 121,
+   "y": 0,
+   "width": 40,
+   "height": 36
+  },
+  {
+   "path": "dragon1/wing_l.png",
+   "x": 163,
+   "y": 0,
+   "width": 38,
+   "height": 36
+  },
+  {
+   "path": "dragon1/wing_r.png",
+   "x": 203,
+   "y": 0,
+   "width": 38,
+   "height": 36
+  },
+  {
+   "path": "dragon1/foot_l.png",
+   "x": 29,
+   "y": 63,
+   "width": 18,
+   "height": 12
+  },
+  {
+   "path": "dragon1/foot_r.png",
+   "x": 49,
+   "y": 63,
+   "width": 18,
+   "height": 12
+  },
+  {
+   "path": "dragon1/body.png",
+   "x": 0,
+   "y": 0,
+   "width": 57,
+   "height": 61
+  },
+  {
+   "path": "dragon1/head.png",
+   "x": 59,
+   "y": 0,
+   "width": 60,
+   "height": 60
+  },
+  {
+   "path": "dragon1/flame.png",
+   "x": 0,
+   "y": 63,
+   "width": 27,
+   "height": 36
+  }
+ ]
+}

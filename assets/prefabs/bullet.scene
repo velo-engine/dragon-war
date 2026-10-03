@@ -1,0 +1,9 @@
+# A dragon fireball. Projectile (src/projectile.v) flies it to its target; Game pools these nodes.
+node Bullet {
+  Projectile { }
+  node Trail {
+    ParticleSystem { texture = @asset("9eeb387f")  rate = 46  looping = true  lifetime = 0.28  speed = 8  spread = 180  start_size = 16  end_size = 2
+      additive = true  max_particles = 24  start_color = [255, 200, 90, 220]  end_color = [255, 90, 30, 0] }
+  }
+  Sprite { texture = @asset("cbecc6fe")  size = [44, 30] }
+}

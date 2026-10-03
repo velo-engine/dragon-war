@@ -1,0 +1,5 @@
+/dragon-city
+/build/
+*.exe
+*.dSYM/
+__pycache__/

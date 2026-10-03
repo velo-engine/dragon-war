@@ -1,0 +1,6 @@
+node FxBoom {
+  ParticleSystem { texture = @asset("9eeb387f")  rate = 0  looping = false  duration = 0  additive = false  burst = 16  lifetime = 0.6  speed = 70  speed_var = 40  spread = 180  damping = 2.5  start_size = 30  end_size = 10  start_color = [70, 60, 60, 190]  end_color = [40, 40, 40, 0] }
+  node Fire {
+    ParticleSystem { texture = @asset("9eeb387f")  rate = 0  looping = false  duration = 0  additive = true  burst = 24  lifetime = 0.42  speed = 170  speed_var = 60  spread = 180  damping = 3  start_size = 26  end_size = 6  start_color = [255, 220, 120, 255]  end_color = [255, 70, 20, 0] }
+  }
+}
