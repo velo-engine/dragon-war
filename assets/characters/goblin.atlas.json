@@ -1,49 +1,14 @@
 {
  "image": "goblin.png",
- "width": 256,
- "height": 48,
+ "width": 120,
+ "height": 133,
  "regions": [
   {
-   "path": "goblin/leg_b.png",
-   "x": 118,
-   "y": 0,
-   "width": 11,
-   "height": 20
-  },
-  {
-   "path": "goblin/leg_f.png",
-   "x": 131,
-   "y": 0,
-   "width": 11,
-   "height": 20
-  },
-  {
-   "path": "goblin/arm_b.png",
-   "x": 94,
-   "y": 0,
-   "width": 10,
-   "height": 21
-  },
-  {
    "path": "goblin/body.png",
-   "x": 62,
-   "y": 0,
-   "width": 30,
-   "height": 28
-  },
-  {
-   "path": "goblin/head.png",
    "x": 0,
    "y": 0,
-   "width": 60,
-   "height": 46
-  },
-  {
-   "path": "goblin/arm_f.png",
-   "x": 106,
-   "y": 0,
-   "width": 10,
-   "height": 21
+   "width": 120,
+   "height": 133
   }
  ]
 }

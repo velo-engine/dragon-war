@@ -1,63 +1,14 @@
 {
  "image": "imp.png",
- "width": 256,
- "height": 40,
+ "width": 102,
+ "height": 114,
  "regions": [
   {
-   "path": "imp/wing_l.png",
-   "x": 52,
-   "y": 0,
-   "width": 37,
-   "height": 32
-  },
-  {
-   "path": "imp/wing_r.png",
-   "x": 91,
-   "y": 0,
-   "width": 37,
-   "height": 32
-  },
-  {
-   "path": "imp/leg_b.png",
-   "x": 180,
-   "y": 0,
-   "width": 9,
-   "height": 17
-  },
-  {
-   "path": "imp/leg_f.png",
-   "x": 191,
-   "y": 0,
-   "width": 9,
-   "height": 17
-  },
-  {
-   "path": "imp/arm_b.png",
-   "x": 158,
-   "y": 0,
-   "width": 9,
-   "height": 18
-  },
-  {
    "path": "imp/body.png",
-   "x": 130,
-   "y": 0,
-   "width": 26,
-   "height": 24
-  },
-  {
-   "path": "imp/head.png",
    "x": 0,
    "y": 0,
-   "width": 50,
-   "height": 38
-  },
-  {
-   "path": "imp/arm_f.png",
-   "x": 169,
-   "y": 0,
-   "width": 9,
-   "height": 18
+   "width": 102,
+   "height": 114
   }
  ]
 }

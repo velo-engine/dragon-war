@@ -3,3 +3,4 @@
 *.exe
 *.dSYM/
 __pycache__/
+art_raw/

@@ -1,49 +1,14 @@
 {
  "image": "orc.png",
- "width": 256,
- "height": 60,
+ "width": 152,
+ "height": 168,
  "regions": [
   {
-   "path": "orc/leg_b.png",
-   "x": 144,
-   "y": 0,
-   "width": 12,
-   "height": 24
-  },
-  {
-   "path": "orc/leg_f.png",
-   "x": 158,
-   "y": 0,
-   "width": 12,
-   "height": 24
-  },
-  {
-   "path": "orc/arm_b.png",
-   "x": 116,
-   "y": 0,
-   "width": 12,
-   "height": 25
-  },
-  {
    "path": "orc/body.png",
-   "x": 78,
-   "y": 0,
-   "width": 36,
-   "height": 34
-  },
-  {
-   "path": "orc/head.png",
    "x": 0,
    "y": 0,
-   "width": 76,
-   "height": 58
-  },
-  {
-   "path": "orc/arm_f.png",
-   "x": 130,
-   "y": 0,
-   "width": 12,
-   "height": 25
+   "width": 152,
+   "height": 168
   }
  ]
 }
